@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Diagnostics;
 
 namespace OutputExcel
 {   
@@ -77,7 +78,7 @@ namespace OutputExcel
                 {
                     btnStart_WH.Enabled = false;
                     progressBar1_WH.Visible = true;
-                    Item item = new Item("WH", pageSize, "skfxs00000", "Pass1234");
+                    Item item = new Item("WH", pageSize, "skfxs00000", "Bb123456");
                     backgroundWorker1.RunWorkerAsync(item);
                 }
             }          
@@ -308,6 +309,35 @@ namespace OutputExcel
                     btnStart_NS.Text = "开始导入";
                     break;
             }            
-        }        
+        }
+
+        private void buttonDY_Click(object sender, EventArgs e)
+        {
+            open("DY.exe");
+        }
+
+        private void buttonWH_Click(object sender, EventArgs e)
+        {
+            open("WH.exe");
+        }
+
+        private void buttonJQ_Click(object sender, EventArgs e)
+        {
+            open("JQ.exe");
+        }
+
+        private void buttonNS_Click(object sender, EventArgs e)
+        {
+            open("NS.exe");
+        }
+        private void open(String name)
+        {
+            ProcessStartInfo info = new ProcessStartInfo();
+            info.FileName = name;// @"路径\exe的文件名";
+            info.Arguments = "";
+            info.WindowStyle = ProcessWindowStyle.Minimized;
+            Process pro = Process.Start(info);
+            pro.WaitForExit(); 
+        }
     }
 }

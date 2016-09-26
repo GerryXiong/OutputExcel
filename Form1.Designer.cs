@@ -32,20 +32,24 @@
             this.btnStart_DY = new System.Windows.Forms.Button();
             this.numericUpDown_DY = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonDY = new System.Windows.Forms.Button();
             this.progressBar1_DY = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonJQ = new System.Windows.Forms.Button();
             this.progressBar1_JQ = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown_JQ = new System.Windows.Forms.NumericUpDown();
             this.btnStart_JQ = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.buttonWH = new System.Windows.Forms.Button();
             this.progressBar1_WH = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown_WH = new System.Windows.Forms.NumericUpDown();
             this.btnStart_WH = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonNS = new System.Windows.Forms.Button();
             this.progressBar1_NS = new System.Windows.Forms.ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown_NS = new System.Windows.Forms.NumericUpDown();
@@ -84,6 +88,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonDY);
             this.groupBox1.Controls.Add(this.progressBar1_DY);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.numericUpDown_DY);
@@ -94,6 +99,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DY 东岳";
+            // 
+            // buttonDY
+            // 
+            this.buttonDY.Location = new System.Drawing.Point(55, 0);
+            this.buttonDY.Name = "buttonDY";
+            this.buttonDY.Size = new System.Drawing.Size(38, 23);
+            this.buttonDY.TabIndex = 5;
+            this.buttonDY.Text = "open";
+            this.buttonDY.UseVisualStyleBackColor = true;
+            this.buttonDY.Click += new System.EventHandler(this.buttonDY_Click);
             // 
             // progressBar1_DY
             // 
@@ -121,6 +136,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.buttonJQ);
             this.groupBox2.Controls.Add(this.progressBar1_JQ);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.numericUpDown_JQ);
@@ -131,6 +147,16 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "JQ 金桥";
+            // 
+            // buttonJQ
+            // 
+            this.buttonJQ.Location = new System.Drawing.Point(54, -1);
+            this.buttonJQ.Name = "buttonJQ";
+            this.buttonJQ.Size = new System.Drawing.Size(38, 23);
+            this.buttonJQ.TabIndex = 5;
+            this.buttonJQ.Text = "open";
+            this.buttonJQ.UseVisualStyleBackColor = true;
+            this.buttonJQ.Click += new System.EventHandler(this.buttonJQ_Click);
             // 
             // progressBar1_JQ
             // 
@@ -173,6 +199,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.buttonWH);
             this.groupBox3.Controls.Add(this.progressBar1_WH);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.numericUpDown_WH);
@@ -183,6 +210,16 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "WH 武汉";
+            // 
+            // buttonWH
+            // 
+            this.buttonWH.Location = new System.Drawing.Point(55, 0);
+            this.buttonWH.Name = "buttonWH";
+            this.buttonWH.Size = new System.Drawing.Size(38, 23);
+            this.buttonWH.TabIndex = 5;
+            this.buttonWH.Text = "open";
+            this.buttonWH.UseVisualStyleBackColor = true;
+            this.buttonWH.Click += new System.EventHandler(this.buttonWH_Click);
             // 
             // progressBar1_WH
             // 
@@ -225,6 +262,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonNS);
             this.groupBox4.Controls.Add(this.progressBar1_NS);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.numericUpDown_NS);
@@ -235,6 +273,16 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "NS 北盛";
+            // 
+            // buttonNS
+            // 
+            this.buttonNS.Location = new System.Drawing.Point(54, 1);
+            this.buttonNS.Name = "buttonNS";
+            this.buttonNS.Size = new System.Drawing.Size(38, 23);
+            this.buttonNS.TabIndex = 5;
+            this.buttonNS.Text = "open";
+            this.buttonNS.UseVisualStyleBackColor = true;
+            this.buttonNS.Click += new System.EventHandler(this.buttonNS_Click);
             // 
             // progressBar1_NS
             // 
@@ -327,6 +375,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericUpDown_NS;
         private System.Windows.Forms.Button btnStart_NS;
+        private System.Windows.Forms.Button buttonDY;
+        private System.Windows.Forms.Button buttonJQ;
+        private System.Windows.Forms.Button buttonWH;
+        private System.Windows.Forms.Button buttonNS;
     }
 }
 
