@@ -78,7 +78,7 @@ namespace OutputExcel
                 {
                     btnStart_WH.Enabled = false;
                     progressBar1_WH.Visible = true;
-                    Item item = new Item("WH", pageSize, "skfxs00000", "Bb123456");
+                    Item item = new Item("WH", pageSize, "skfxs00000", "Dd123456");
                     backgroundWorker1.RunWorkerAsync(item);
                 }
             }          
